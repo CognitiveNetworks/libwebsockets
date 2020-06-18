@@ -1,1 +1,6 @@
 libcnwebsockets (4.0.BUILD_NUMBER) trusty; urgency=medium
+
+  [ Ed Okerson ]
+  * Non-maintainer upload.
+
+ -- Ed Okerson <ed.okerson@inscape.tv>  Thu, Jun 18 2020 11:07:00

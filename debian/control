@@ -1,4 +1,4 @@
-Source: libwebsockets
+Source: libcnwebsockets
 Priority: optional
 Maintainer: Andy Green https://warmcat.com
 Build-Depends: debhelper (>= 9),
