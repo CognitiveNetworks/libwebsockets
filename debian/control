@@ -1,0 +1,51 @@
+Source: libwebsockets
+Priority: optional
+Maintainer: Andy Green https://warmcat.com
+Build-Depends: debhelper (>= 9),
+ procps
+Standards-Version: 3.9.6
+Section: libs
+Homepage: https://libwebsockets.org/
+Vcs-Git: git@github.com:CognitiveNetworks/libwebsockets.git
+Vcs-Browser: https://github.com/CognitiveNetworks/libwebsockets.git
+
+Package: libcnwebsockets
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
+Description: C library for WebSockets
+ Libwebsockets (LWS) is a flexible, lightweight pure C library for
+ implementing modern network protocols easily with a tiny footprint,
+ using a nonblocking event loop. It has been developed continuously
+ since 2010 and is used in tens of millions of devices and by thousands
+ of developers around the world.
+
+Package: libcnwebsockets-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends}, libcnwebsockets (= ${binary:Version})
+Multi-Arch: same
+Description: C library for WebSockets (development files)
+ Libwebsockets (LWS) is a flexible, lightweight pure C library for
+ implementing modern network protocols easily with a tiny footprint,
+ using a nonblocking event loop. It has been developed continuously
+ since 2010 and is used in tens of millions of devices and by thousands
+ of developers around the world.
+ .
+ This package provides the development files for hiredis.
+
+Package: libcnwebsockets-dbg
+Priority: extra
+Section: debug
+Architecture: any
+Depends: ${misc:Depends}, libcnhiredis0 (= ${binary:Version})
+Multi-Arch: same
+Description: C library for WebSockets (debug)
+ Libwebsockets (LWS) is a flexible, lightweight pure C library for
+ implementing modern network protocols easily with a tiny footprint,
+ using a nonblocking event loop. It has been developed continuously
+ since 2010 and is used in tens of millions of devices and by thousands
+ of developers around the world.
+ .
+ This package provides the debugging symbols for hiredis.
