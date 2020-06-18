@@ -116,7 +116,7 @@ __lws_sul_service_ripe(lws_dll2_owner_t *own, int own_len, lws_usec_t usnow)
 
 	do {
 		lws_sorted_usec_list_t *hit = NULL;
-		lws_usec_t lowest;
+		lws_usec_t lowest = 0;
 		int n = 0;
 
 		for (n = 0; n < own_len; n++) {

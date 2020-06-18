@@ -1,4 +1,4 @@
-libcnwebsockets (4.0.BUILD_NUMBER) trusty; urgency=medium
+libcnwebsockets (4.0.0) trusty; urgency=medium
 
   [ Ed Okerson ]
   * Non-maintainer upload.
