@@ -1,8 +1,8 @@
 Source: libcnwebsockets
 Priority: optional
-Maintainer: Andy Green https://warmcat.com
+Maintainer: Andy Green <andy@warmcat.com>
 Build-Depends: debhelper (>= 9),
- procps
+ procps, cmake
 Standards-Version: 3.9.6
 Section: libs
 Homepage: https://libwebsockets.org/

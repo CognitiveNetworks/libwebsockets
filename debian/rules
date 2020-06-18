@@ -1,5 +1,5 @@
 #!/usr/bin/make -f
-#export DH_VERBOSE=1
+export DH_VERBOSE=1
 
 CFLAGS  = $(shell dpkg-buildflags --get CFLAGS)
 CFLAGS += $(shell dpkg-buildflags --get CPPFLAGS)
@@ -18,8 +18,9 @@ override_dh_auto_install:
 		PREFIX=/usr
 
 override_dh_installchangelogs:
-	dh_installchangelogs CHANGELOG.md
+	dh_installchangelogs changelog
 
 override_dh_strip:
 	dh_strip --dbg-package=libcnwebsockets-dbg
 
+override_dh_auto_clean:
